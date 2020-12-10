@@ -1,0 +1,33 @@
+{
+	"name": "AzureSqlTable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "displayTitle",
+				"type": "varchar"
+			},
+			{
+				"name": "contentSummary",
+				"type": "varchar"
+			},
+			{
+				"name": "dateModified",
+				"type": "varchar"
+			},
+			{
+				"name": "sentiment",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "ArticleTable"
+		}
+	}
+}
